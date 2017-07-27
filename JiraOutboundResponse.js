@@ -109,7 +109,7 @@ function createJiraTicket(props,who) {
     });
                
     // Submit the request and capture the response
-    var putResponse = request.write( props['PID'] );
+    var putResponse = request.write( JSON.stringify( { "dynatraceProblemId": props['PID'] } ) );
     
     // Write the response to the activity stream
     console.log(JSON.stringify(putResponse));
