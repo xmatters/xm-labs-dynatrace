@@ -7,6 +7,7 @@
 
 # Files
 * [Dynatrace.zip](Dynatrace.zip) - The communications plan Dynatrace sends events to
+* [JiraOutboundResponse.js](JiraOutboundResponse.js) - Optional outbound response script for creating a Jira issue with the problem ID. See [here]() for details. 
 
 # Installation
 
@@ -141,5 +142,34 @@ Similarly, the Activity Stream contains the outbound request sending to Dynatrac
 <kbd>
   <img src="images/dynatrace_activity_stream.png">
 </kbd>
+
+
+# Extras
+## Create Jira Issue
+The [JiraOutboundResponse.js](JiraOutboundResponse.js) script is an outbound integration script for creating a Jira issue from the Dynatrace problem. When responding with `Create Jira Ticket`, the jira issue will have the `dynatraceProblemId` set. If the Dynatrace Add-on for Jira is installed, the side panel will have the Dynatrace details. 
+
+`IMAGE HERE`
+
+### Installation steps
+1. Login to the xMatters instance as a developer
+2. On the Dynatrace communications plan, click Edit > Integration Builder.
+3. Expand the Outbound Integrations and click Add. 
+4. Populate the following values:
+| Item | Value |
+| Trigger | Notification responses |
+| Form | Incident Alert Webhook |
+| Action | Run a script |
+| Location | Cloud |
+| Name | Incident alert webhook - Notification responses - Create Jira Issue |
+5. Click Edit Script and paste in the contents of the [JiraOutboundResponse.js](JiraOutboundResponse.js) script and click Save. 
+6. Navigate to the `Incident Alert Webhook` form and click Edit > Responses. 
+7. Add a response and populate the following values:
+| Item | Value |
+| Response | |
+| Email Description | |
+| Voice Prompt | |
+| Options | Action: Assign to User <br> Contribution: Positive | 
+
+`IMAGE HERE`
 
 
