@@ -177,6 +177,11 @@ The [JiraOutboundResponse.js](JiraOutboundResponse.js) script is an outbound int
 <kbd>
 	<img src="images/JiraResponseOption.png" width="600" height="375" >
 </kbd>
+8. Next, add two constants with the following names and values, replacing with the relevant jira project settings:
+| Name | Value |
+| --- | --- |
+| JIRA_PROJECT_KEY | `Jira Project Key here` <br> For example `HELP` |
+| JIRA_ISSUE_TYPE | `Jira Issue Type` <br> for example `IT Help` |
 
 ### Testing
 Trigger a problem from Dynatrace and select the `Create Jira Ticket` response option. 
