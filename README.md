@@ -178,6 +178,7 @@ The [JiraOutboundResponse.js](JiraOutboundResponse.js) script is an outbound int
 	<img src="images/JiraResponseOption.png" width="600" height="375" >
 </kbd>
 8. Next, add two constants with the following names and values, replacing with the relevant jira project settings:
+
 | Name | Value |
 | --- | --- |
 | JIRA_PROJECT_KEY | `Jira Project Key here` <br> For example `HELP` |
