@@ -175,7 +175,7 @@ The [JiraOutboundResponse.js](JiraOutboundResponse.js) script is an outbound int
 | Options | **Action**: Assign to User <br> **Contribution**: Positive | 
 
 <kbd>
-	<img src="images/JiraResponseOption.png" >
+	<img src="images/JiraResponseOption.png" width="600" height="375" >
 </kbd>
 
 ### Testing
