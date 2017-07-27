@@ -7,7 +7,7 @@
 
 # Files
 * [Dynatrace.zip](Dynatrace.zip) - The communications plan Dynatrace sends events to
-* [JiraOutboundResponse.js](JiraOutboundResponse.js) - Optional outbound response script for creating a Jira issue with the problem ID. See [here]() for details. 
+* [JiraOutboundResponse.js](JiraOutboundResponse.js) - Optional outbound response script for creating a Jira issue with the problem ID. See [below](#create-jira-issue) for details. 
 
 # Installation
 
@@ -148,14 +148,16 @@ Similarly, the Activity Stream contains the outbound request sending to Dynatrac
 ## Create Jira Issue
 The [JiraOutboundResponse.js](JiraOutboundResponse.js) script is an outbound integration script for creating a Jira issue from the Dynatrace problem. When responding with `Create Jira Ticket`, the jira issue will have the `dynatraceProblemId` set. If the Dynatrace Add-on for Jira is installed, the side panel will have the Dynatrace details. 
 
-`IMAGE HERE`
+`IMAGE HERE of Jira issue`
 
 ### Installation steps
 1. Login to the xMatters instance as a developer
 2. On the Dynatrace communications plan, click Edit > Integration Builder.
 3. Expand the Outbound Integrations and click Add. 
 4. Populate the following values:
+
 | Item | Value |
+| ---- | ---- |
 | Trigger | Notification responses |
 | Form | Incident Alert Webhook |
 | Action | Run a script |
@@ -164,12 +166,26 @@ The [JiraOutboundResponse.js](JiraOutboundResponse.js) script is an outbound int
 5. Click Edit Script and paste in the contents of the [JiraOutboundResponse.js](JiraOutboundResponse.js) script and click Save. 
 6. Navigate to the `Incident Alert Webhook` form and click Edit > Responses. 
 7. Add a response and populate the following values:
+
 | Item | Value |
-| Response | |
-| Email Description | |
-| Voice Prompt | |
-| Options | Action: Assign to User <br> Contribution: Positive | 
+| ---- | ---- |
+| Response | Create Jira Ticket |
+| Email Description | Stop escalations and create a Jira issue |
+| Voice Prompt | Create a Jira issue |
+| Options | **Action**: Assign to User <br> **Contribution**: Positive | 
 
-`IMAGE HERE`
+<kbd>
+	<img src="images/JiraResponseOption.png" >
+</kbd>
 
+### Testing
+Trigger a problem from Dynatrace and select the `Create Jira Ticket` response option. 
+
+<kbd>
+	<img src="images/JiraResponseOption-mobile.png" width="200" height="400">
+</kbd>
+
+Then, in Jira search for the new Jira issue:
+
+IMAGEHERE
 
