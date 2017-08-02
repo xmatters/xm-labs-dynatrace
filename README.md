@@ -1,5 +1,5 @@
 # Dynatrace
-[Dynatrace](https://www.dynatrace.com) is a leading performance and application monitoring application. This integration extends the alerting capabilities to use xMatters. This is a two-way integration for sending alerts out and updating the Problem in Dynatrace with event status, device delivery and response information from xMatters notifications. 
+[Dynatrace](https://www.dynatrace.com) is a leading performance and application monitoring application. This integration extends the alerting capabilities to use xMatters. This is a closed loop integration for sending alerts out and updating the Problem in Dynatrace with event status, device delivery and response information from xMatters notifications. 
 
 # Pre-Requisites
 * [Dynatrace](https://www.dynatrace.com) Account
