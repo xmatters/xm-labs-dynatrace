@@ -3,9 +3,8 @@
 
 Checkout the video:
 
-<kbd>
-   [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/jNEBLGfOxcg/0.jpg)](https://www.youtube.com/watch?v=jNEBLGfOxcg)
-</kbd>
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/jNEBLGfOxcg/0.jpg)](https://www.youtube.com/watch?v=jNEBLGfOxcg)
+
 
 # Pre-Requisites
 * [Dynatrace](https://www.dynatrace.com) Account
