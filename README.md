@@ -3,7 +3,7 @@
 
 Checkout the video:
 <kbd>
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/jNEBLGfOxcg" frameborder="0" allowfullscreen></iframe>
+   [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/jNEBLGfOxcg/0.jpg)](https://www.youtube.com/watch?v=jNEBLGfOxcg)
 </kbd>
 
 # Pre-Requisites
