@@ -66,7 +66,7 @@ After you import the communication plan, you need to setup the xMatters and Dyna
 1. Select the xMatters endpoint, specify the Username and Password of the Dynatrace REST API user you created above, and then click Save Changes.
 1. Close the Endpoints dialog box.
 1. Click Edit Constants
-1. Select the `DYNATRACCE_API_TOKEN` constant, paste your Dynatrace API Token into the Value field, and then click Save Changes.
+1. Select the `DYNATRACE_API_TOKEN` constant, paste your Dynatrace API Token into the Value field, and then click Save Changes.
 
 ### Accessing URLs
 The Incident alert webhook has a URL that you need to use to target it from Dynatrace.
