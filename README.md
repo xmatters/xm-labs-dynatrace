@@ -5,6 +5,14 @@ Checkout the video:
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/jNEBLGfOxcg/0.jpg)](https://www.youtube.com/watch?v=jNEBLGfOxcg)
 
+---------
+
+<kbd>
+  <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/disclaimer.png">
+</kbd>
+
+---------
+
 
 # Pre-Requisites
 * [Dynatrace](https://www.dynatrace.com) Account
