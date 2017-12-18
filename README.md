@@ -164,7 +164,7 @@ Similarly, the Activity Stream contains the outbound request sending to Dynatrac
 The [JiraOutboundResponse.js](JiraOutboundResponse.js) script is an outbound integration script for creating a Jira issue from the Dynatrace problem. When responding with `Create Jira Ticket`, the jira issue will have the `dynatraceProblemId` set. If the Dynatrace Add-on for Jira is installed, the side panel will have the Dynatrace details. 
 
 <kbd>
-	<img src="images/Jira-ticket.png"  >
+	<img src="images/Jira-ticket.png" width="500">
 </kbd>
 
 ### Installation steps
@@ -202,6 +202,17 @@ The [JiraOutboundResponse.js](JiraOutboundResponse.js) script is an outbound int
 | JIRA_PROJECT_KEY | `Jira Project Key here` <br> For example `HELP` |
 | JIRA_ISSUE_TYPE | `Jira Issue Type` <br> for example `IT Help` |
 
+9. Add a new Endpoint with the following details:
+
+| Field | Value |
+| --- | --- |
+| Name | JIRA |
+| Base URL | Base url for the target Jira instance |
+| Authorization | Basic |
+| Username | Username for authentication into Jira |
+| Password | Password |
+| Preemptive | Checked |
+
 ### Testing
 Trigger a problem from Dynatrace and select the `Create Jira Ticket` response option. 
 
@@ -212,6 +223,6 @@ Trigger a problem from Dynatrace and select the `Create Jira Ticket` response op
 Then, in Jira search for the new Jira issue:
 
 <kbd>
-	<img src="images/Jira-ticket.png"  >
+	<img src="images/Jira-ticket.png" width="500">
 </kbd>
 
