@@ -98,7 +98,7 @@ Note: The following sections require you to log into Dynatrace as an Environment
 1. Expand the Integration section and click Problem notifications.
 1. Select the Custom integration button.
    <kbd>
-	  <img src="images/dynatrace_integration_url.png">
+	  <img src="images/dynatrace_custom_integration.png">
    </kbd>
 1. In the Set up custom integration enter the following information:
 	* The name of the integration
