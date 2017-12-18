@@ -99,7 +99,7 @@ Note: The following sections require you to log into Dynatrace as an Environment
 1. Select the Custom integration button.
 
    <kbd>
-	  <img src="images/dynatrace_custom_integration.png" height="500">
+	  <img src="images/dynatrace_custom_integration.png" height="800">
    </kbd>
    
 1. In the Set up custom integration enter the following information:
