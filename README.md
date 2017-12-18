@@ -163,7 +163,9 @@ Similarly, the Activity Stream contains the outbound request sending to Dynatrac
 ## Create Jira Issue
 The [JiraOutboundResponse.js](JiraOutboundResponse.js) script is an outbound integration script for creating a Jira issue from the Dynatrace problem. When responding with `Create Jira Ticket`, the jira issue will have the `dynatraceProblemId` set. If the Dynatrace Add-on for Jira is installed, the side panel will have the Dynatrace details. 
 
-`IMAGE HERE of Jira issue`
+<kbd>
+	<img src="images/Jira-ticket.png"  >
+</kbd>
 
 ### Installation steps
 1. Login to the xMatters instance as a developer
@@ -209,5 +211,7 @@ Trigger a problem from Dynatrace and select the `Create Jira Ticket` response op
 
 Then, in Jira search for the new Jira issue:
 
-IMAGEHERE
+<kbd>
+	<img src="images/Jira-ticket.png"  >
+</kbd>
 
