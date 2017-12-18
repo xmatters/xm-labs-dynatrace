@@ -83,7 +83,7 @@ To get the URL for an integration service:
 1. Click the gear icon beside the Incident alert webhook, and then select Integration URL.
 
 <kbd>
-	<img src="images/dynatrace_integration_url.png">
+	<img src="images/dynatrace_integration_url.png" width="500">
 </kbd>
 
 Copy the URL displayed in the dialog box to a text editor; you will use this URL in the next step.
@@ -97,9 +97,11 @@ Note: The following sections require you to log into Dynatrace as an Environment
 1. Click Settings on the left navigation menu
 1. Expand the Integration section and click Problem notifications.
 1. Select the Custom integration button.
+
    <kbd>
-	  <img src="images/dynatrace_custom_integration.png">
+	  <img src="images/dynatrace_custom_integration.png" height="500">
    </kbd>
+   
 1. In the Set up custom integration enter the following information:
 	* The name of the integration
 	* The Integration URL for your inbound integration
