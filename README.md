@@ -30,7 +30,7 @@ You need to set a request header that includes an API token for authentication i
 After an API token is generated, expand the xMatters-Integration entry in the `API Keys` section. Your API token appears in the Generated key text field.
 
 <kbd>
-	<img src="images/dynatrace_settings.png">
+    <img src="images/dynatrace_settings.png">
 </kbd>
 
 For more details, see the [Dynatrace documentation](https://help.dynatrace.com/api-documentation/v1/authentication/)
@@ -44,9 +44,9 @@ To create a REST API user:
 1. Log in to the target xMatters system.
 1. On the Users tab, click Add.
 1. Enter the appropriate information for your new user. Because this user will affect how messages appear for recipients, you may want to identify the user as specific to Dynatrace. For example:
-	1. First Name: Dynatrace
-	1. Last Name: Integration
-	1. User ID: dynatrace
+    1. First Name: Dynatrace
+    1. Last Name: Integration
+    1. User ID: dynatrace
 1. In the Roles area, add the REST Web Service User role.
 1. Click Add.
 Make a note of the user credentials and details. You will need them when configuring other parts of this integration.
@@ -57,7 +57,7 @@ To import the communication plan:
 1. In the target xMatters system, click Import Plan from the Developer tab.
 1. Click Choose File, and then locate the downloaded communication plan (.zip file).
 1. Click Import Plan:
-	* Importing the plan will automatically enable it, and enable its forms for web services.
+    * Importing the plan will automatically enable it, and enable its forms for web services.
 1. Once the communication plan has been imported, click Edit > Forms.
 1. For the AutoShare webhook form, click Web Service Only > Sender Permissions.
 1. Enter the REST API user you created above, and then click Save Changes.
@@ -71,7 +71,7 @@ The Dynatrace Incident form uses the default recipients specified on the Layout 
 ### Configure integration settings
 After you import the communication plan, you need to setup the xMatters and Dynatrace endpoints.
 1. From the communication plan, click the Integration Builder tab, and then click Edit Endpoints.
-1. Select the xMatters endpoint, specify the Username and Password of the Dynatrace REST API user you created above, and then click Save Changes.
+1. Select the Dynatrace endpoint, update tbe Base URL with the value of your Dynatrace tenant URL. e.g. https://cpk75115.live.dynatrace.com . Specify the Username and Password of the Dynatrace REST API user you created above, and then click Save Changes.
 1. Close the Endpoints dialog box.
 1. Click Edit Constants
 1. Select the `DYNATRACE_API_TOKEN` constant, paste your Dynatrace API Token into the Value field, and then click Save Changes.
@@ -83,7 +83,7 @@ To get the URL for an integration service:
 1. Click the gear icon beside the Incident alert webhook, and then select Integration URL.
 
 <kbd>
-	<img src="images/dynatrace_integration_url.png" width="500">
+    <img src="images/dynatrace_integration_url.png" width="500">
 </kbd>
 
 Copy the URL displayed in the dialog box to a text editor; you will use this URL in the next step.
@@ -99,28 +99,28 @@ Note: The following sections require you to log into Dynatrace as an Environment
 1. Select the Custom integration button.
 
    <kbd>
-	  <img src="images/dynatrace_custom_integration.png" height="800">
+      <img src="images/dynatrace_custom_integration.png" height="800">
    </kbd>
    
 1. In the Set up custom integration enter the following information:
-	* The name of the integration
-	* The Integration URL for your inbound integration
-	* The username password of the REST web service user
-	* The Custom JSON payload. You can use the default setting, or copy and paste the following to get the complete data set.
-		```json
-		{
-		  "ImpactedEntity": "{ImpactedEntity}",
-		  "PID": "{PID}",
-		  "ProblemDetails": "{ProblemDetails}",
-		  "ProblemID": "{ProblemID}",
-		  "ProblemImpact": "{ProblemImpact}",
-		  "ProblemTitle": "{ProblemTitle}",
-		  "ProblemURL": "{ProblemURL}",
-		  "State": "{State}",
-		  "Tags": "{Tags}"
-		}
-		```
-	* Toggle all Applications, Services Infrastructure Notification level to ON.
+    * The name of the integration
+    * The Integration URL for your inbound integration
+    * The username password of the REST web service user
+    * The Custom JSON payload. You can use the default setting, or copy and paste the following to get the complete data set.
+        ```json
+        {
+          "ImpactedEntity": "{ImpactedEntity}",
+          "PID": "{PID}",
+          "ProblemDetails": "{ProblemDetails}",
+          "ProblemID": "{ProblemID}",
+          "ProblemImpact": "{ProblemImpact}",
+          "ProblemTitle": "{ProblemTitle}",
+          "ProblemURL": "{ProblemURL}",
+          "State": "{State}",
+          "Tags": "{Tags}"
+        }
+        ```
+    * Toggle all Applications, Services Infrastructure Notification level to ON.
 1. Click Test button.
 1. If the test succeeds, the Save button will be activated. Click the Save button. Otherwise, check the setting to make sure the Webhook URL and user credentials are entered correctly.
 
@@ -164,7 +164,7 @@ Similarly, the Activity Stream contains the outbound request sending to Dynatrac
 The [JiraOutboundResponse.js](JiraOutboundResponse.js) script is an outbound integration script for creating a Jira issue from the Dynatrace problem. When responding with `Create Jira Ticket`, the jira issue will have the `dynatraceProblemId` set. If the Dynatrace Add-on for Jira is installed, the side panel will have the Dynatrace details. 
 
 <kbd>
-	<img src="images/Jira-ticket.png" width="500">
+    <img src="images/Jira-ticket.png" width="500">
 </kbd>
 
 ### Installation steps
@@ -192,7 +192,7 @@ The [JiraOutboundResponse.js](JiraOutboundResponse.js) script is an outbound int
 | Options | **Action**: Assign to User <br> **Contribution**: Positive | 
 
 <kbd>
-	<img src="images/JiraResponseOption.png" width="600" height="375" >
+    <img src="images/JiraResponseOption.png" width="600" height="375" >
 </kbd>
 
 8. Next, add two constants with the following names and values, replacing with the relevant jira project settings:
@@ -217,12 +217,11 @@ The [JiraOutboundResponse.js](JiraOutboundResponse.js) script is an outbound int
 Trigger a problem from Dynatrace and select the `Create Jira Ticket` response option. 
 
 <kbd>
-	<img src="images/JiraResponseOption-mobile.png" width="200" height="400">
+    <img src="images/JiraResponseOption-mobile.png" width="200" height="400">
 </kbd>
 
 Then, in Jira search for the new Jira issue:
 
 <kbd>
-	<img src="images/Jira-ticket.png" width="500">
+    <img src="images/Jira-ticket.png" width="500">
 </kbd>
-
