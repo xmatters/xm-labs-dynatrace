@@ -103,24 +103,27 @@ Note: The following sections require you to log into Dynatrace as an Environment
    </kbd>
    
 1. In the Set up custom integration enter the following information:
-    * The name of the integration
-    * The Integration URL for your inbound integration
-    * The username password of the REST web service user
-    * The Custom JSON payload. You can use the default setting, or copy and paste the following to get the complete data set.
-        ```json
-        {
-          "ImpactedEntity": "{ImpactedEntity}",
-          "PID": "{PID}",
-          "ProblemDetails": "{ProblemDetails}",
-          "ProblemID": "{ProblemID}",
-          "ProblemImpact": "{ProblemImpact}",
-          "ProblemTitle": "{ProblemTitle}",
-          "ProblemURL": "{ProblemURL}",
-          "State": "{State}",
-          "Tags": "{Tags}"
-        }
-        ```
-    * Toggle all Applications, Services Infrastructure Notification level to ON.
+
+  * The name of the integration
+  * The Integration URL for your inbound integration
+  * The username password of the REST web service user
+  * The Custom JSON payload. You can use the default setting, or copy and paste the following to get the complete data set.
+    
+```json
+{
+  "ImpactedEntity": "{ImpactedEntity}",
+  "PID": "{PID}",
+  "ProblemDetails": "{ProblemDetails}",
+  "ProblemID": "{ProblemID}",
+  "ProblemImpact": "{ProblemImpact}",
+  "ProblemTitle": "{ProblemTitle}",
+  "ProblemURL": "{ProblemURL}",
+  "State": "{State}",
+  "Tags": "{Tags}"
+}
+```      
+  * Toggle all Applications, Services Infrastructure Notification level to ON.
+  
 1. Click Test button.
 1. If the test succeeds, the Save button will be activated. Click the Save button. Otherwise, check the setting to make sure the Webhook URL and user credentials are entered correctly.
 
