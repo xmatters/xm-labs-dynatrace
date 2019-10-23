@@ -1,7 +1,9 @@
-# Dynatrace
+# Dynatrace - DEPRECATED
+**NOTE**: This integration has been deprecated in favor of [the shiny](https://help.xmatters.com/integrations/monitoring/dynatrace.htm?cshid=DYNATRACE new one).
+
+
 [Dynatrace](https://www.dynatrace.com) is a leading performance and application monitoring application. This integration extends the alerting capabilities to use xMatters. This is a closed loop integration for sending alerts out and updating the Problem in Dynatrace with event status, device delivery and response information from xMatters notifications. 
 
-**NOTE**: This integration has been deprecated in favor of [this shiny](https://help.xmatters.com/integrations/monitoring/dynatrace.htm?cshid=DYNATRACE) new one.
 
 Checkout the video:
 
